@@ -132,7 +132,7 @@
 { code: "100", cnName: "手刹闭合", enName: "Handbrake closed", solution: "1、松开手刹" },
 { code: "101", cnName: "手刹故障", enName: "Handbrake failure", solution: "1、人离开车辆未拉手刹" },
 { code: "102", cnName: "转角传感器故障", enName: "Angle sensor failure", solution: "1、转角电位计故障或模拟量需重新标定" },
-{code: "103", cnName: "倾斜开关提前闭合", enName: "Incorrect start Tilt switch active before key on", solution: "1、断开倾斜开关" },
+{ code: "103", cnName: "倾斜开关提前闭合", enName: "Incorrect start Tilt switch active before key on", solution: "1、断开倾斜开关" },
 { code: "104", cnName: "侧移开关提前闭合", enName: "Incorrect start Side switch active before key on", solution: "1、断开侧移开关" },
 { code: "105", cnName: "属具开关提前闭合", enName: "Incorrect start Attachment switch active before key on", solution: "1、断开属具开关" },
 { code: "106", cnName: "起升调速传感器输入超范围", enName: "Lifting pot out of range", solution: "1、起升调速传感器故障或模拟量需重新标定" },
@@ -171,16 +171,16 @@
 { code: "139", cnName: "BMS电压排线脱落", enName: "BMS voltage sampled opened", solution: "暂无合适的解决方式，建议联系相应工作人员：段立国，联系电话:18688976559" },
 { code: "140", cnName: "BMS火警故障", enName: "BMS Fire failure", solution: "暂无合适的解决方式，建议联系相应工作人员：段立国，联系电话:18688976559" },
 { code: "141", cnName: "BMS放电温差", enName: "BMS discharge temperature failure", solution: "暂无合适的解决方式，建议联系相应工作人员：段立国，联系电话:18688976559" },
-            { code: "142", cnName: "电机堵转保护", enName: "Motor Blocked Protection", solution: "1、重启钥匙开关 2、踩一下制动踏板解锁" }
-            { code: "143", cnName: "BMS 过放警告", enName: "BMS OverDisCharge Alarm", solution: "暂无合适的解决方式，建议联系相应工作人员：段立国，联系电话:18688976559" }
-        { code: "144", cnName: "操作顺序故障", enName: "Incorrenct start", solution: "按照正常的顺序操作" }
-        { code: "145", cnName: "紧急反向故障", enName: "Emergency", solution: "紧急反向结束后，需要重新闭合互锁开关。" }
-        { code: "146", cnName: "重置1800mm高度检测开关DI8", enName: "ResetDI8 sensor", solution: "重置1800mm高度检测开关DI8" }
-        { code: "147", cnName: "重置300mm高度检测开关DI5", enName: "ResetDI5 sensor", solution: "重置300mm高度检测开关DI5" }
-        { code: "148", cnName: "紧急反向信号异常", enName: "Emergency Signal Fault", solution: "紧急方向开关信号与CAN信号不一致" }
-        { code: "149", cnName: "起升和下降同时存在", enName: "Lift+Lower", solution: "起升和下降同时存在" }
-        { code: "215", cnName: "一级锁车", enName: "", solution: "请联系负责人：段立国，联系电话：18688976559" }
-        { code: "216", cnName: "二级锁车", enName: "", solution: "请联系负责人：段立国，联系电话：18688976559" }
+        { code: "142", cnName: "电机堵转保护", enName: "Motor Blocked Protection", solution: "1、重启钥匙开关 2、踩一下制动踏板解锁" },
+        { code: "143", cnName: "BMS 过放警告", enName: "BMS OverDisCharge Alarm", solution: "暂无合适的解决方式，建议联系相应工作人员：段立国，联系电话:18688976559" },
+        { code: "144", cnName: "操作顺序故障", enName: "Incorrenct start", solution: "按照正常的顺序操作" },
+        { code: "145", cnName: "紧急反向故障", enName: "Emergency", solution: "紧急反向结束后，需要重新闭合互锁开关。" },
+        { code: "146", cnName: "重置1800mm高度检测开关DI8", enName: "ResetDI8 sensor", solution: "重置1800mm高度检测开关DI8" },
+        { code: "147", cnName: "重置300mm高度检测开关DI5", enName: "ResetDI5 sensor", solution: "重置300mm高度检测开关DI5" },
+        { code: "148", cnName: "紧急反向信号异常", enName: "Emergency Signal Fault", solution: "紧急方向开关信号与CAN信号不一致" },
+        { code: "149", cnName: "起升和下降同时存在", enName: "Lift+Lower", solution: "起升和下降同时存在" },
+        { code: "215", cnName: "一级锁车", enName: "", solution: "请联系负责人：段立国，联系电话：18688976559" },
+        { code: "216", cnName: "二级锁车", enName: "", solution: "请联系负责人：段立国，联系电话：18688976559" },
         ];
 
         function searchFault() {
@@ -197,11 +197,10 @@
             }
 
             if (!found) {
-                resultDiv.innerHTML = `<strong>暂无合适的解决方式，建议联系相应工作人员：</strong> 段立国，联系电话18688976559`;
+                resultDiv.innerHTML = `<strong>暂无合适的解决方式，建议联系相应工作人员：</strong> 段立国，联系电话:18688976559`;
             }
         }
     </script>
 </body>
 
 </html>
-
